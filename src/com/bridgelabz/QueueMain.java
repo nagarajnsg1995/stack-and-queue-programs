@@ -10,22 +10,36 @@ class QueueLogic {
             queue.add(data);
         }
 
+    public void deQueue() {
+        if (queue.size() == 0) {
+            System.out.println("Queue list is empty");
+        } else {
+            queue.pop();
+        }
+    }
+
         public void toPrint() {
             System.out.println("Queue list is :");
             for (Integer i : queue) {
-                System.out.print(" " + i);
+                System.out.println(" " + i);
             }
         }
     }
 public class QueueMain {
     public static void main(String[] args) {
 
-        QueueLogic queuelogic = new QueueLogic();
+       QueueLogic queuelogic = new QueueLogic();
         queuelogic.enQueue(56);
         queuelogic.enQueue(30);
         queuelogic.enQueue(70);
         queuelogic.toPrint();
-
+        queuelogic.deQueue();
+        queuelogic.toPrint();
+        queuelogic.deQueue();
+        queuelogic.toPrint();
+        queuelogic.deQueue();
+        queuelogic.toPrint();
+        queuelogic.deQueue();
     }
 }
 
