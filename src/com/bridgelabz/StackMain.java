@@ -7,6 +7,18 @@ public class StackMain {
         stacklogic.push(30);
         stacklogic.push(56);
         stacklogic.myPrint();
+        stacklogic.peek();
+        stacklogic.pop();
+        stacklogic.myPrint();
+        stacklogic.peek();
+        stacklogic.pop();
+        stacklogic.myPrint();
+        stacklogic.peek();
+        stacklogic.pop();
+
+
+        stacklogic.peek();
+        stacklogic.pop();
 
     }
 }
